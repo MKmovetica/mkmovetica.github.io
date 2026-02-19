@@ -3,176 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MK Movetica – Digitale Prozessarchitektur</title>
+<title>MK Movetica – Automatisierte Käufer-Qualifizierung</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(135deg, #0f2f46, #143a52);
-  color: white;
+    font-family: 'Inter', sans-serif;
+    background: #0f2d3a;
+    color: white;
+    line-height: 1.6;
 }
 
-/* Navigation */
-.navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(15,47,70,0.6);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
+section {
+    padding: 100px 20px;
+    text-align: center;
 }
 
-.navbar img {
-  height: 46px;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.nav-links a {
-  color: rgba(255,255,255,0.85);
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: 500;
-  transition: 0.3s;
+.logo {
+    width: 140px;
+    margin-bottom: 40px;
 }
 
-.nav-links a:hover {
-  color: #f7b733;
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
-/* Hero */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-.hero-content {
-  max-width: 850px;
-  animation: fadeIn 1.2s ease;
-}
-
-.hero h1 {
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-  font-weight: 800;
-}
-
-.hero p {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 35px;
+p {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
 .btn {
-  background: #f7b733;
-  padding: 14px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #0f2f46;
-  transition: 0.3s;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 28px;
+    background: #f4a621;
+    color: #0f2d3a;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-  background: #ffd061;
+    background: #ffb733;
 }
 
-/* Section */
-.section {
-  padding: 120px 20px;
-  text-align: center;
-  background: #f4f6f9;
-  color: #0f2f46;
+.dark {
+    background: #0c2430;
 }
 
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
+.light {
+    background: #f4f4f4;
+    color: #0f2d3a;
 }
 
-.process-box {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-  font-weight: 500;
+.box {
+    background: white;
+    color: #0f2d3a;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Footer */
-footer {
-  padding: 40px;
-  text-align: center;
-  font-size: 14px;
-  opacity: 0.7;
-  background: #0c2638;
+.process {
+    font-weight: 600;
+    margin-top: 20px;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-  .navbar {
-    padding: 20px;
-  }
-  .hero h1 {
-    font-size: 34px;
-  }
+.footer {
+    background: #081a22;
+    padding: 40px 20px;
+    font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="navbar">
-  <img src="logo.png" alt="MK Movetica Logo">
-  <div class="nav-links">
-    <a href="#">Lösung</a>
-    <a href="#">Prozess</a>
-    <a href="#">Referenz</a>
-    <a href="#">Kontakt</a>
-  </div>
+<section>
+<div class="container">
+<img src="logo.png" class="logo" alt="MK Movetica Logo">
+
+<h1>Automatisierte Käufer-Qualifizierung<br>für Immobilienmakler</h1>
+
+<p>Wir verwandeln Exposé-Anfragen in terminierte, vorqualifizierte Interessenten –<br>
+ohne zusätzlichen Telefonaufwand.</p>
+
+<a href="mailto:service@mkmovetica.de" class="btn">Strategische Prozessanalyse starten</a>
 </div>
-
-<section class="hero">
-  <div class="hero-content">
-    <h1>Strukturierte Anfrageprozesse<br>für mehr Abschlüsse</h1>
-    <p>Digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren, priorisieren und Verwaltungsaufwand messbar reduzieren.</p>
-    <a href="#" class="btn">Strategische Analyse anfragen</a>
-  </div>
 </section>
 
-<section class="section">
-  <h2>Der strukturierte Prozess</h2>
-  <div class="process-box">
-    Anfrage → Vorqualifizierung → Automatische Antwort → Terminlogik → Lead-Priorisierung → Abschluss
-  </div>
+<section class="dark">
+<div class="container">
+<h2>Die Realität im Makleralltag</h2>
+
+<p>Über 70% aller Exposé-Anfragen sind nicht kaufbereit.<br>
+Sie kosten Zeit, Energie und blockieren echte Abschlüsse.</p>
+
+<div class="box">
+<p><strong>60 Anfragen</strong><br>
+→ 5 ernsthafte Gespräche<br>
+→ 1 Abschluss</p>
+</div>
+</div>
 </section>
 
-<footer>
+<section class="light">
+<div class="container">
+<h2>Unser System</h2>
+
+<p class="process">
+Anfrage → Sofort-Antwort → Digitale Vorqualifizierung → Lead-Scoring → Nur qualifizierte Termine im Kalender
+</p>
+
+<div class="box">
+<p><strong>Nach Implementierung:</strong><br>
+Mehr qualifizierte Termine.<br>
+Weniger Verwaltungsaufwand.<br>
+Messbar höhere Abschlussquote.</p>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+<h2>Wir bauen keine Kampagnen.</h2>
+<h2>Wir bauen Abschluss-Strukturen.</h2>
+
+<p>Prozessarchitektur für Immobilienunternehmen mit Anspruch.</p>
+
+<a href="mailto:service@mkmovetica.de" class="btn">Strategische Analyse anfragen</a>
+</div>
+</section>
+
+<div class="footer">
 © 2026 MK Movetica – Digitale Prozessautomatisierung für Immobilienunternehmen
-</footer>
+</div>
 
 </body>
 </html>
