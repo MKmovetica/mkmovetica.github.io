@@ -5,173 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK Movetica Solutions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #1a1a1a;
-}
-
-h1,h2,h3 {
-    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:#0b1f2e;
+    color:white;
+    text-align:center;
 }
 
 .hero {
-    background: linear-gradient(135deg, #0F2B46, #112f4a);
-    color: white;
-    text-align: center;
-    padding: 160px 20px 120px;
+    padding:120px 20px 100px 20px;
+    background:linear-gradient(135deg,#0b1f2e,#163a57);
 }
 
-.hero img {
-    width: 180px;
-    margin-bottom: 40px;
-    filter: drop-shadow(0 15px 40px rgba(0,0,0,0.4));
+.hero-logo {
+    width:220px;
+    margin-bottom:40px;
+    animation:fadeIn 1.2s ease;
 }
 
-.hero h1 {
-    font-size: 48px;
-    max-width: 900px;
-    margin: auto;
-    line-height: 1.2;
+h1 {
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:20px;
 }
 
-.hero p {
-    font-size: 20px;
-    margin-top: 25px;
-    opacity: 0.9;
+p {
+    max-width:700px;
+    margin:0 auto 40px auto;
+    font-size:18px;
+    line-height:1.6;
+    opacity:0.9;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 16px 40px;
-    background: #F5A623;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 6px;
-    transition: 0.3s;
+    display:inline-block;
+    background:#ff9f1c;
+    padding:16px 32px;
+    border-radius:8px;
+    font-weight:600;
+    text-decoration:none;
+    color:#0b1f2e;
+    transition:0.3s;
 }
 
 .btn:hover {
-    background: #e29600;
+    transform:scale(1.05);
+    background:#ffc15c;
 }
 
-section {
-    padding: 100px 20px;
-    max-width: 1100px;
-    margin: auto;
+.section {
+    padding:100px 20px;
+    background:white;
+    color:#0b1f2e;
 }
 
-.video-section {
-    text-align: center;
-}
-
-.video-box {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto 0;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 30px 70px rgba(0,0,0,0.2);
-}
-
-.video-box img {
-    width: 100%;
-    display: block;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(245,166,35,0.9);
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    color: white;
-    cursor: pointer;
+.section h2 {
+    font-size:32px;
+    margin-bottom:40px;
 }
 
 .process-box {
-    background: #f4f6f8;
-    padding: 70px;
-    border-radius: 16px;
-    margin-top: 60px;
-    text-align: center;
-    font-size: 18px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.05);
-}
-
-.case {
-    background: #0F2B46;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
+    max-width:800px;
+    margin:0 auto;
+    background:#f4f7fa;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 footer {
-    background: #0b1e30;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
+    padding:40px;
+    background:#0b1f2e;
+    font-size:14px;
+    opacity:0.6;
 }
 
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(-20px);}
+    to {opacity:1; transform:translateY(0);}
+}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
+    <img src="logo.png" alt="MK Movetica Logo" class="hero-logo">
 
-    <img src="logo.png" alt="MK Movetica Logo" style="width:180px; margin-bottom:30px;">
+    <h1>Strukturierte Anfrageprozesse für<br>mehr Abschlüsse</h1>
 
-    <h1>Strukturierte Anfrageprozesse für mehr Abschlüsse</h1>
+    <p>
+        Digitale Prozessarchitekturen für Immobilienunternehmen,
+        die Anfragen automatisch qualifizieren,
+        priorisieren und den Verwaltungsaufwand deutlich reduzieren.
+    </p>
 
-    <p>Digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren und Verwaltungsaufwand messbar reduzieren.</p>
-
-    <a href="mailto:service@mkmovetica.de" class="btn">Strategische Analyse anfragen</a>
-
+    <a href="mailto:service@mkmovetica.de" class="btn">
+        Strategische Analyse anfragen
+    </a>
 </section>
 
-<section class="video-section">
-
-    <h2>So sieht digitale Prozessstruktur aus</h2>
-
-    <div class="video-box">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop" alt="Video Vorschau">
-        <div class="play-button">▶</div>
-    </div>
-
-</section>
-
-<section>
-
+<section class="section">
     <h2>Der strukturierte Prozess</h2>
 
     <div class="process-box">
         Anfrage → Vorqualifizierung → Automatische Antwort → Terminlogik → Lead-Priorisierung → Abschluss
     </div>
-
-</section>
-
-<section class="case">
-
-    <h2>Beispiel aus der Praxis</h2>
-
-    <p>Ein regionaler Maklerbetrieb mit über 60 monatlichen Anfragen konnte durch strukturierte Vorqualifizierung seine Terminquote um 28% steigern und den Verwaltungsaufwand deutlich reduzieren.</p>
-
 </section>
 
 <footer>
