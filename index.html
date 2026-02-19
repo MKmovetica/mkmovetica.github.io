@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MK Movetica – Digitale Käufer-Qualifizierung</title>
+<title>MK Movetica – Prozessarchitektur für Immobilienmakler</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 * {
 margin:0;
 padding:0;
@@ -19,13 +18,12 @@ body {
 font-family:'Inter',sans-serif;
 background:#0f2d3a;
 color:white;
-overflow-x:hidden;
+line-height:1.6;
 }
 
 section {
-padding:100px 20px;
+padding:110px 20px;
 text-align:center;
-position:relative;
 }
 
 .container {
@@ -34,35 +32,34 @@ margin:0 auto;
 }
 
 .logo {
-width:160px;
+width:150px;
 margin-bottom:40px;
-animation:fadeIn 1.5s ease forwards;
 }
 
 h1 {
-font-size:44px;
-margin-bottom:20px;
-font-weight:700;
+font-size:48px;
+font-weight:800;
+margin-bottom:25px;
 }
 
 h2 {
-font-size:32px;
+font-size:34px;
 margin-bottom:30px;
 }
 
 p {
-font-size:18px;
+font-size:19px;
 opacity:0.9;
 }
 
 .btn {
 display:inline-block;
-margin-top:40px;
-padding:15px 30px;
+margin-top:45px;
+padding:16px 32px;
 background:#f4a621;
 color:#0f2d3a;
 text-decoration:none;
-font-weight:600;
+font-weight:700;
 border-radius:6px;
 transition:0.3s;
 }
@@ -83,69 +80,33 @@ color:#0f2d3a;
 .box {
 background:white;
 color:#0f2d3a;
-padding:40px;
+padding:45px;
 margin-top:40px;
 border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.15);
+box-shadow:0 20px 50px rgba(0,0,0,0.15);
 }
 
-.process-animation {
+.system-grid {
 display:flex;
 justify-content:center;
+flex-wrap:wrap;
 gap:20px;
 margin-top:50px;
-flex-wrap:wrap;
 }
 
-.step {
+.system-step {
 background:white;
 color:#0f2d3a;
-padding:20px 25px;
+padding:20px 30px;
 border-radius:8px;
 font-weight:600;
-opacity:0;
-transform:translateY(20px);
-animation:slideUp 0.6s ease forwards;
+min-width:180px;
 }
-
-.step:nth-child(1){animation-delay:0.2s}
-.step:nth-child(2){animation-delay:0.4s}
-.step:nth-child(3){animation-delay:0.6s}
-.step:nth-child(4){animation-delay:0.8s}
-.step:nth-child(5){animation-delay:1s}
 
 .footer {
 background:#081a22;
-padding:40px 20px;
+padding:50px 20px;
 font-size:14px;
-}
-
-@keyframes slideUp {
-to {
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@keyframes fadeIn {
-from {opacity:0;}
-to {opacity:1;}
-}
-
-.header-gradient {
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%);
-animation:moveBg 6s linear infinite;
-}
-
-@keyframes moveBg {
-0% {transform:translateX(-10px);}
-50% {transform:translateX(10px);}
-100% {transform:translateX(-10px);}
 }
 
 </style>
@@ -154,71 +115,74 @@ animation:moveBg 6s linear infinite;
 <body>
 
 <section>
-<div class="header-gradient"></div>
 <div class="container">
 <img src="logo.png" class="logo" alt="MK Movetica Logo">
 
-<h1>Automatisierte Käufer-Qualifizierung<br>für Immobilienmakler</h1>
+<h1>Bis zu 40% weniger Verwaltungsaufwand<br>durch automatisierte Exposé-Qualifizierung</h1>
 
-<p>Wir verwandeln Exposé-Anfragen in terminierte, vorqualifizierte Interessenten –
-ohne zusätzlichen Telefonaufwand.</p>
+<p>Wir filtern, priorisieren und terminieren Ihre Käuferanfragen – automatisch.<br>
+Ohne zusätzlichen Telefonaufwand. Ohne Chaos.</p>
 
-<a href="mailto:service@mkmovetica.de" class="btn">Strategische Prozessanalyse starten</a>
+<a href="mailto:service@mkmovetica.de" class="btn">Prozesspotenzial prüfen</a>
 </div>
 </section>
 
 <section class="dark">
 <div class="container">
-<h2>Vorher / Nachher</h2>
+<h2>Wenn Sie monatlich 50+ Anfragen erhalten,<br>verlieren Sie aktuell Abschlüsse.</h2>
 
 <div class="box">
-<p><strong>VORHER:</strong><br>
-60 Anfragen → 5 ernsthafte Gespräche → 1 Abschluss<br>
-Hoher Telefonaufwand. Unklare Priorisierung.</p>
-
-<hr style="margin:30px 0; opacity:0.2;">
-
-<p><strong>NACHHER:</strong><br>
-60 Anfragen → 18 qualifizierte Leads → 8 feste Termine → 3 Abschlüsse<br>
-Struktur. Automatisierung. Kontrolle.</p>
+<p>• 70% nicht kaufbereit<br>
+• Unklare Priorisierung<br>
+• Telefonate ohne Abschluss<br>
+• Manuelle Nachverfolgung<br>
+• Termin-Ausfälle</p>
 </div>
 </div>
 </section>
 
 <section class="light">
 <div class="container">
-<h2>Unser Prozess-System</h2>
+<h2>Die Struktur hinter qualifizierten Abschlüssen</h2>
 
-<div class="process-animation">
-<div class="step">Anfrage</div>
-<div class="step">Sofort-Antwort</div>
-<div class="step">Digitale Qualifizierung</div>
-<div class="step">Lead-Scoring</div>
-<div class="step">Terminierung</div>
+<div class="system-grid">
+<div class="system-step">Anfrage</div>
+<div class="system-step">Automatische Sofort-Antwort</div>
+<div class="system-step">Digitale Vorqualifizierung</div>
+<div class="system-step">Lead-Scoring</div>
+<div class="system-step">Terminierung</div>
+<div class="system-step">Abschluss</div>
 </div>
 
+<div class="box">
+<p>Nur kaufbereite Interessenten landen in Ihrem Kalender.<br>
+Alle anderen werden automatisch vorqualifiziert oder aussortiert.</p>
+</div>
 </div>
 </section>
 
 <section class="dark">
 <div class="container">
-<h2>Praxisbeispiel</h2>
+<h2>Warum klassische Lösungen scheitern</h2>
 
 <div class="box">
-<p><strong>Regionale Makleragentur – Süddeutschland</strong></p>
+<p>• CRM allein löst kein Priorisierungsproblem.<br>
+• Mehr Marketing erhöht nur die Anfrage-Flut.<br>
+• Telefonieren skaliert nicht.<br>
+• Social Media ersetzt keine Struktur.</p>
+
 <br>
-<p>Vor Implementierung: 2–3 Abschlüsse pro Monat</p>
-<p>Nach 90 Tagen: +28% Terminquote</p>
-<p>+41% mehr qualifizierte Gespräche</p>
-<p>Deutlich reduzierte Verwaltungszeit</p>
+
+<p><strong>Wir bauen keine Kampagnen.</strong><br>
+Wir bauen Abschluss-Strukturen.</p>
 </div>
 
-<a href="mailto:service@mkmovetica.de" class="btn">Analysegespräch anfragen</a>
+<a href="mailto:service@mkmovetica.de" class="btn">Automatisierung bewerten</a>
 </div>
 </section>
 
 <div class="footer">
-© 2026 MK Movetica – Digitale Prozessarchitektur für Immobilienunternehmen
+© 2026 MK Movetica – Prozessarchitektur für Immobilienunternehmen
 </div>
 
 </body>
