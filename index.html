@@ -5,145 +5,173 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK Movetica – Digitale Prozessarchitektur</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: #0f1f2e;
-    color: white;
-    text-align: center;
+  background: linear-gradient(135deg, #0f2f46, #143a52);
+  color: white;
 }
 
+/* Navigation */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15,47,70,0.6);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 46px;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f7b733;
+}
+
+/* Hero */
 .hero {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #0f1f2e 0%, #163a55 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.logo {
-    width: 220px;
-    margin-bottom: 30px;
-    animation: fadeIn 1.5s ease forwards;
-    filter: drop-shadow(0 0 25px rgba(0, 150, 255, 0.3));
+.hero-content {
+  max-width: 850px;
+  animation: fadeIn 1.2s ease;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 800;
-    max-width: 900px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease forwards;
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
-p {
-    font-size: 18px;
-    max-width: 700px;
-    opacity: 0.85;
-    margin-bottom: 40px;
-    animation: fadeIn 2.5s ease forwards;
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 35px;
 }
 
-.button {
-    background: #f5a623;
-    color: black;
-    padding: 16px 36px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-    animation: fadeIn 3s ease forwards;
+.btn {
+  background: #f7b733;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0f2f46;
+  transition: 0.3s;
 }
 
-.button:hover {
-    background: #ffb84d;
-    transform: translateY(-3px);
+.btn:hover {
+  background: #ffd061;
 }
 
+/* Section */
 .section {
-    background: #f4f6f8;
-    color: #1a1a1a;
-    padding: 100px 20px;
+  padding: 120px 20px;
+  text-align: center;
+  background: #f4f6f9;
+  color: #0f2f46;
 }
 
 .section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 40px;
 }
 
 .process-box {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    max-width: 900px;
-    margin: auto;
-    font-size: 18px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+  font-weight: 500;
 }
 
+/* Footer */
 footer {
-    background: #0c1722;
-    padding: 40px;
-    font-size: 14px;
-    opacity: 0.7;
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  background: #0c2638;
 }
 
+/* Animation */
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 32px;
-    }
-    .logo {
-        width: 160px;
-    }
+/* Responsive */
+@media(max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<div class="navbar">
+  <img src="logo.png" alt="MK Movetica Logo">
+  <div class="nav-links">
+    <a href="#">Lösung</a>
+    <a href="#">Prozess</a>
+    <a href="#">Referenz</a>
+    <a href="#">Kontakt</a>
+  </div>
+</div>
+
 <section class="hero">
-    <img src="logo.png" class="logo" alt="MK Movetica Logo">
-
+  <div class="hero-content">
     <h1>Strukturierte Anfrageprozesse<br>für mehr Abschlüsse</h1>
-
-    <p>
-        Digitale Prozessarchitekturen für Immobilienunternehmen,
-        die Anfragen automatisch qualifizieren, priorisieren und
-        den Verwaltungsaufwand messbar reduzieren.
-    </p>
-
-    <a href="mailto:service@mkmovetica.de" class="button">
-        Strategische Analyse anfragen
-    </a>
+    <p>Digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren, priorisieren und Verwaltungsaufwand messbar reduzieren.</p>
+    <a href="#" class="btn">Strategische Analyse anfragen</a>
+  </div>
 </section>
 
 <section class="section">
-    <h2>Der strukturierte Prozess</h2>
-
-    <div class="process-box">
-        Anfrage → Vorqualifizierung → Automatische Antwort → 
-        Terminlogik → Lead-Priorisierung → Abschluss
-    </div>
+  <h2>Der strukturierte Prozess</h2>
+  <div class="process-box">
+    Anfrage → Vorqualifizierung → Automatische Antwort → Terminlogik → Lead-Priorisierung → Abschluss
+  </div>
 </section>
 
 <footer>
-    © 2026 MK Movetica – Digitale Prozessautomatisierung für Immobilienunternehmen
+© 2026 MK Movetica – Digitale Prozessautomatisierung für Immobilienunternehmen
 </footer>
 
 </body>
