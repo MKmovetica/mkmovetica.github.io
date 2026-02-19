@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MK Movetica Solutions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -15,25 +15,30 @@ body {
     color: #1a1a1a;
 }
 
-section {
-    padding: 100px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-h1, h2, h3 {
+h1,h2,h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
 .hero {
-    background: linear-gradient(135deg, #0F2B46, #163A5F);
+    background: linear-gradient(135deg, #0F2B46, #0c2236);
     color: white;
     text-align: center;
-    padding: 150px 20px;
+    padding: 160px 20px 120px;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.logo span {
+    color: #F5A623;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 52px;
     max-width: 900px;
     margin: auto;
     line-height: 1.2;
@@ -61,60 +66,65 @@ h1, h2, h3 {
     background: #e29600;
 }
 
-.stats {
+.video-section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.video-mockup {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+.video-mockup img {
+    width: 100%;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(245,166,35,0.9);
+    border-radius: 50%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    align-items: center;
     justify-content: center;
-    margin-top: 60px;
-    text-align: center;
+    font-size: 28px;
+    color: white;
 }
 
-.stat h3 {
-    font-size: 40px;
-    color: #F5A623;
-    margin: 0;
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.stat p {
-    margin-top: 10px;
+.dark-section {
+    background: #0F2B46;
+    color: white;
 }
 
-.problem ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.process-flow {
+.process-box {
     background: #f4f6f8;
-    border-radius: 12px;
     padding: 60px;
+    border-radius: 16px;
     margin-top: 60px;
-    text-align: center;
     font-size: 18px;
-    line-height: 2;
+    text-align: center;
 }
 
 .case {
     background: #0F2B46;
     color: white;
-    border-radius: 12px;
-    padding: 80px;
-    margin-top: 80px;
-}
-
-.case h2 {
-    color: #F5A623;
-}
-
-.cta {
-    background: #0F2B46;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
+    padding: 100px 20px;
 }
 
 footer {
@@ -130,52 +140,44 @@ footer {
 <body>
 
 <section class="hero">
-    <h1>Bis zu 35% weniger Verwaltungsaufwand durch strukturierte Anfrageprozesse</h1>
-    <p>Wir entwickeln digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren und Abschlusschancen erhöhen.</p>
-    <a href="mailto:service@mkmovetica.de" class="btn">Strategische Prozessanalyse anfragen</a>
 
-    <div class="stats">
-        <div class="stat">
-            <h3>+28%</h3>
-            <p>höhere Terminquote</p>
-        </div>
-        <div class="stat">
-            <h3>-35%</h3>
-            <p>weniger Verwaltungszeit</p>
-        </div>
-        <div class="stat">
-            <h3>+22%</h3>
-            <p>bessere Lead-Qualität</p>
-        </div>
-    </div>
+    <div class="logo">MK <span>Movetica</span> Solutions</div>
+
+    <h1>Strukturierte Anfrageprozesse für mehr Abschlüsse</h1>
+
+    <p>Wir entwickeln digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren und Verwaltungsaufwand reduzieren.</p>
+
+    <a href="mailto:service@mkmovetica.de" class="btn">Strategische Analyse anfragen</a>
+
 </section>
 
-<section class="problem">
-    <h2>Warum viele Makler Umsatzpotenzial verlieren</h2>
-    <ul>
-        <li>Unstrukturierte Exposé-Anfragen ohne Vorqualifizierung</li>
-        <li>Manuelle Terminabstimmung mit hohem Zeitaufwand</li>
-        <li>Fehlende Priorisierung kaufstarker Interessenten</li>
-        <li>Kein systematisches Nachfass-Management</li>
-    </ul>
+<section class="video-section">
+
+    <h2>So sieht strukturierte Automatisierung aus</h2>
+
+    <div class="video-mockup">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop" alt="Prozess Mockup">
+        <div class="play-button">▶</div>
+    </div>
+
 </section>
 
 <section>
+
     <h2>Der strukturierte Prozess</h2>
-    <div class="process-flow">
-        Anfrage → Automatische Vorqualifizierung → Strukturierte Antwort → Terminlogik → Lead-Priorisierung → Abschluss
+
+    <div class="process-box">
+        Anfrage → Vorqualifizierung → Automatische Antwort → Terminlogik → Lead-Priorisierung → Abschluss
     </div>
+
 </section>
 
 <section class="case">
-    <h2>Beispiel aus der Praxis</h2>
-    <p>Ein regionaler Maklerbetrieb mit über 60 monatlichen Anfragen optimierte seinen Anfrageprozess durch strukturierte Vorqualifizierung und automatisierte Antwortlogik. Ergebnis: 28% höhere Terminquote und signifikante Entlastung im Backoffice.</p>
-</section>
 
-<section class="cta">
-    <h2>Struktur schafft Abschlüsse.</h2>
-    <p>Vereinbaren Sie jetzt Ihre strategische Analyse und entdecken Sie Ihr ungenutztes Potenzial.</p>
-    <a href="mailto:service@mkmovetica.de" class="btn">Analyse starten</a>
+    <h2>Beispiel aus der Praxis</h2>
+
+    <p>Ein regionaler Maklerbetrieb mit über 60 monatlichen Anfragen konnte durch strukturierte Vorqualifizierung seine Terminquote um 28% steigern und den Verwaltungsaufwand signifikant reduzieren.</p>
+
 </section>
 
 <footer>
