@@ -3,111 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MK Movetica – Automatisierte Käufer-Qualifizierung</title>
+<title>MK Movetica – Digitale Käufer-Qualifizierung</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: #0f2d3a;
-    color: white;
-    line-height: 1.6;
+font-family:'Inter',sans-serif;
+background:#0f2d3a;
+color:white;
+overflow-x:hidden;
 }
 
 section {
-    padding: 100px 20px;
-    text-align: center;
+padding:100px 20px;
+text-align:center;
+position:relative;
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+max-width:1100px;
+margin:0 auto;
 }
 
 .logo {
-    width: 140px;
-    margin-bottom: 40px;
+width:160px;
+margin-bottom:40px;
+animation:fadeIn 1.5s ease forwards;
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    font-weight: 700;
+font-size:44px;
+margin-bottom:20px;
+font-weight:700;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+font-size:32px;
+margin-bottom:30px;
 }
 
 p {
-    font-size: 18px;
-    opacity: 0.9;
+font-size:18px;
+opacity:0.9;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 14px 28px;
-    background: #f4a621;
-    color: #0f2d3a;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 6px;
-    transition: 0.3s;
+display:inline-block;
+margin-top:40px;
+padding:15px 30px;
+background:#f4a621;
+color:#0f2d3a;
+text-decoration:none;
+font-weight:600;
+border-radius:6px;
+transition:0.3s;
 }
 
 .btn:hover {
-    background: #ffb733;
+background:#ffb733;
 }
 
 .dark {
-    background: #0c2430;
+background:#0c2430;
 }
 
 .light {
-    background: #f4f4f4;
-    color: #0f2d3a;
+background:#f4f4f4;
+color:#0f2d3a;
 }
 
 .box {
-    background: white;
-    color: #0f2d3a;
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+background:white;
+color:#0f2d3a;
+padding:40px;
+margin-top:40px;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
-.process {
-    font-weight: 600;
-    margin-top: 20px;
+.process-animation {
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:50px;
+flex-wrap:wrap;
 }
+
+.step {
+background:white;
+color:#0f2d3a;
+padding:20px 25px;
+border-radius:8px;
+font-weight:600;
+opacity:0;
+transform:translateY(20px);
+animation:slideUp 0.6s ease forwards;
+}
+
+.step:nth-child(1){animation-delay:0.2s}
+.step:nth-child(2){animation-delay:0.4s}
+.step:nth-child(3){animation-delay:0.6s}
+.step:nth-child(4){animation-delay:0.8s}
+.step:nth-child(5){animation-delay:1s}
 
 .footer {
-    background: #081a22;
-    padding: 40px 20px;
-    font-size: 14px;
+background:#081a22;
+padding:40px 20px;
+font-size:14px;
 }
+
+@keyframes slideUp {
+to {
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeIn {
+from {opacity:0;}
+to {opacity:1;}
+}
+
+.header-gradient {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%);
+animation:moveBg 6s linear infinite;
+}
+
+@keyframes moveBg {
+0% {transform:translateX(-10px);}
+50% {transform:translateX(10px);}
+100% {transform:translateX(-10px);}
+}
+
 </style>
 </head>
 
 <body>
 
 <section>
+<div class="header-gradient"></div>
 <div class="container">
 <img src="logo.png" class="logo" alt="MK Movetica Logo">
 
 <h1>Automatisierte Käufer-Qualifizierung<br>für Immobilienmakler</h1>
 
-<p>Wir verwandeln Exposé-Anfragen in terminierte, vorqualifizierte Interessenten –<br>
+<p>Wir verwandeln Exposé-Anfragen in terminierte, vorqualifizierte Interessenten –
 ohne zusätzlichen Telefonaufwand.</p>
 
 <a href="mailto:service@mkmovetica.de" class="btn">Strategische Prozessanalyse starten</a>
@@ -116,49 +169,56 @@ ohne zusätzlichen Telefonaufwand.</p>
 
 <section class="dark">
 <div class="container">
-<h2>Die Realität im Makleralltag</h2>
-
-<p>Über 70% aller Exposé-Anfragen sind nicht kaufbereit.<br>
-Sie kosten Zeit, Energie und blockieren echte Abschlüsse.</p>
+<h2>Vorher / Nachher</h2>
 
 <div class="box">
-<p><strong>60 Anfragen</strong><br>
-→ 5 ernsthafte Gespräche<br>
-→ 1 Abschluss</p>
+<p><strong>VORHER:</strong><br>
+60 Anfragen → 5 ernsthafte Gespräche → 1 Abschluss<br>
+Hoher Telefonaufwand. Unklare Priorisierung.</p>
+
+<hr style="margin:30px 0; opacity:0.2;">
+
+<p><strong>NACHHER:</strong><br>
+60 Anfragen → 18 qualifizierte Leads → 8 feste Termine → 3 Abschlüsse<br>
+Struktur. Automatisierung. Kontrolle.</p>
 </div>
 </div>
 </section>
 
 <section class="light">
 <div class="container">
-<h2>Unser System</h2>
+<h2>Unser Prozess-System</h2>
 
-<p class="process">
-Anfrage → Sofort-Antwort → Digitale Vorqualifizierung → Lead-Scoring → Nur qualifizierte Termine im Kalender
-</p>
-
-<div class="box">
-<p><strong>Nach Implementierung:</strong><br>
-Mehr qualifizierte Termine.<br>
-Weniger Verwaltungsaufwand.<br>
-Messbar höhere Abschlussquote.</p>
+<div class="process-animation">
+<div class="step">Anfrage</div>
+<div class="step">Sofort-Antwort</div>
+<div class="step">Digitale Qualifizierung</div>
+<div class="step">Lead-Scoring</div>
+<div class="step">Terminierung</div>
 </div>
+
 </div>
 </section>
 
 <section class="dark">
 <div class="container">
-<h2>Wir bauen keine Kampagnen.</h2>
-<h2>Wir bauen Abschluss-Strukturen.</h2>
+<h2>Praxisbeispiel</h2>
 
-<p>Prozessarchitektur für Immobilienunternehmen mit Anspruch.</p>
+<div class="box">
+<p><strong>Regionale Makleragentur – Süddeutschland</strong></p>
+<br>
+<p>Vor Implementierung: 2–3 Abschlüsse pro Monat</p>
+<p>Nach 90 Tagen: +28% Terminquote</p>
+<p>+41% mehr qualifizierte Gespräche</p>
+<p>Deutlich reduzierte Verwaltungszeit</p>
+</div>
 
-<a href="mailto:service@mkmovetica.de" class="btn">Strategische Analyse anfragen</a>
+<a href="mailto:service@mkmovetica.de" class="btn">Analysegespräch anfragen</a>
 </div>
 </section>
 
 <div class="footer">
-© 2026 MK Movetica – Digitale Prozessautomatisierung für Immobilienunternehmen
+© 2026 MK Movetica – Digitale Prozessarchitektur für Immobilienunternehmen
 </div>
 
 </body>
