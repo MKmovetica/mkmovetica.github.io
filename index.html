@@ -3,90 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MK Movetica Solutions</title>
+<title>MK Movetica – Digitale Prozessarchitektur</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0b1f2e;
-    color:white;
-    text-align:center;
+    font-family: 'Inter', sans-serif;
+    background: #0f1f2e;
+    color: white;
+    text-align: center;
 }
 
 .hero {
-    padding:120px 20px 100px 20px;
-    background:linear-gradient(135deg,#0b1f2e,#163a57);
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f1f2e 0%, #163a55 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
-.hero-logo {
-    width:220px;
-    margin-bottom:40px;
-    animation:fadeIn 1.2s ease;
+.logo {
+    width: 220px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease forwards;
+    filter: drop-shadow(0 0 25px rgba(0, 150, 255, 0.3));
 }
 
 h1 {
-    font-size:42px;
-    font-weight:800;
-    margin-bottom:20px;
+    font-size: 48px;
+    font-weight: 800;
+    max-width: 900px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease forwards;
 }
 
 p {
-    max-width:700px;
-    margin:0 auto 40px auto;
-    font-size:18px;
-    line-height:1.6;
-    opacity:0.9;
+    font-size: 18px;
+    max-width: 700px;
+    opacity: 0.85;
+    margin-bottom: 40px;
+    animation: fadeIn 2.5s ease forwards;
 }
 
-.btn {
-    display:inline-block;
-    background:#ff9f1c;
-    padding:16px 32px;
-    border-radius:8px;
-    font-weight:600;
-    text-decoration:none;
-    color:#0b1f2e;
-    transition:0.3s;
+.button {
+    background: #f5a623;
+    color: black;
+    padding: 16px 36px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    animation: fadeIn 3s ease forwards;
 }
 
-.btn:hover {
-    transform:scale(1.05);
-    background:#ffc15c;
+.button:hover {
+    background: #ffb84d;
+    transform: translateY(-3px);
 }
 
 .section {
-    padding:100px 20px;
-    background:white;
-    color:#0b1f2e;
+    background: #f4f6f8;
+    color: #1a1a1a;
+    padding: 100px 20px;
 }
 
 .section h2 {
-    font-size:32px;
-    margin-bottom:40px;
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .process-box {
-    max-width:800px;
-    margin:0 auto;
-    background:#f4f7fa;
-    padding:40px;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
 }
 
 footer {
-    padding:40px;
-    background:#0b1f2e;
-    font-size:14px;
-    opacity:0.6;
+    background: #0c1722;
+    padding: 40px;
+    font-size: 14px;
+    opacity: 0.7;
 }
 
 @keyframes fadeIn {
-    from {opacity:0; transform:translateY(-20px);}
-    to {opacity:1; transform:translateY(0);}
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+    .logo {
+        width: 160px;
+    }
 }
 </style>
 </head>
@@ -94,17 +118,17 @@ footer {
 <body>
 
 <section class="hero">
-    <img src="logo.png" alt="MK Movetica Logo" class="hero-logo">
+    <img src="MK Movetica logo.png" class="logo" alt="MK Movetica Logo">
 
-    <h1>Strukturierte Anfrageprozesse für<br>mehr Abschlüsse</h1>
+    <h1>Strukturierte Anfrageprozesse<br>für mehr Abschlüsse</h1>
 
     <p>
         Digitale Prozessarchitekturen für Immobilienunternehmen,
-        die Anfragen automatisch qualifizieren,
-        priorisieren und den Verwaltungsaufwand deutlich reduzieren.
+        die Anfragen automatisch qualifizieren, priorisieren und
+        den Verwaltungsaufwand messbar reduzieren.
     </p>
 
-    <a href="mailto:service@mkmovetica.de" class="btn">
+    <a href="mailto:service@mkmovetica.de" class="button">
         Strategische Analyse anfragen
     </a>
 </section>
@@ -113,12 +137,13 @@ footer {
     <h2>Der strukturierte Prozess</h2>
 
     <div class="process-box">
-        Anfrage → Vorqualifizierung → Automatische Antwort → Terminlogik → Lead-Priorisierung → Abschluss
+        Anfrage → Vorqualifizierung → Automatische Antwort → 
+        Terminlogik → Lead-Priorisierung → Abschluss
     </div>
 </section>
 
 <footer>
-© 2026 MK Movetica Solutions – Digitale Prozessautomatisierung für Immobilienunternehmen
+    © 2026 MK Movetica – Digitale Prozessautomatisierung für Immobilienunternehmen
 </footer>
 
 </body>
