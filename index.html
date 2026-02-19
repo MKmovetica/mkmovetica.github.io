@@ -21,7 +21,7 @@ section {
     margin: auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,26 +29,26 @@ h1, h2 {
     background: linear-gradient(135deg, #0F2B46, #163A5F);
     color: white;
     text-align: center;
-    padding: 140px 20px;
+    padding: 150px 20px;
 }
 
 .hero h1 {
-    font-size: 46px;
-    max-width: 800px;
+    font-size: 48px;
+    max-width: 900px;
     margin: auto;
     line-height: 1.2;
 }
 
 .hero p {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
     opacity: 0.9;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 35px;
-    padding: 16px 36px;
+    margin-top: 40px;
+    padding: 16px 40px;
     background: #F5A623;
     color: white;
     text-decoration: none;
@@ -61,8 +61,23 @@ h1, h2 {
     background: #e29600;
 }
 
-.problem {
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 60px;
     text-align: center;
+}
+
+.stat h3 {
+    font-size: 40px;
+    color: #F5A623;
+    margin: 0;
+}
+
+.stat p {
+    margin-top: 10px;
 }
 
 .problem ul {
@@ -73,50 +88,26 @@ h1, h2 {
     line-height: 1.8;
 }
 
-.before-after {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex: 1;
-    min-width: 280px;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-}
-
-.before {
+.process-flow {
     background: #f4f6f8;
+    border-radius: 12px;
+    padding: 60px;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
 }
 
-.after {
+.case {
     background: #0F2B46;
     color: white;
+    border-radius: 12px;
+    padding: 80px;
+    margin-top: 80px;
 }
 
-.after h3 {
+.case h2 {
     color: #F5A623;
-}
-
-.process {
-    text-align: center;
-}
-
-.process-steps {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 60px;
-}
-
-.step {
-    flex: 1;
-    min-width: 250px;
-    padding: 30px;
-    border-radius: 8px;
-    background: #f4f6f8;
 }
 
 .cta {
@@ -139,64 +130,56 @@ footer {
 <body>
 
 <section class="hero">
-    <h1>Digitale Prozessstruktur für Immobilienunternehmen</h1>
-    <p>Wir verwandeln eingehende Anfragen in strukturierte, automatisierte Abschlussprozesse.</p>
-    <a href="mailto:service@mkmovetica.de" class="btn">Kostenlose Prozessanalyse anfragen</a>
+    <h1>Bis zu 35% weniger Verwaltungsaufwand durch strukturierte Anfrageprozesse</h1>
+    <p>Wir entwickeln digitale Prozessarchitekturen für Immobilienunternehmen, die Anfragen automatisch qualifizieren und Abschlusschancen erhöhen.</p>
+    <a href="mailto:service@mkmovetica.de" class="btn">Strategische Prozessanalyse anfragen</a>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>+28%</h3>
+            <p>höhere Terminquote</p>
+        </div>
+        <div class="stat">
+            <h3>-35%</h3>
+            <p>weniger Verwaltungszeit</p>
+        </div>
+        <div class="stat">
+            <h3>+22%</h3>
+            <p>bessere Lead-Qualität</p>
+        </div>
+    </div>
 </section>
 
 <section class="problem">
-    <h2>Warum viele Makler täglich Umsatz verlieren</h2>
+    <h2>Warum viele Makler Umsatzpotenzial verlieren</h2>
     <ul>
-        <li>Unstrukturierte Exposé-Anfragen</li>
-        <li>Manuelle Terminabstimmungen</li>
-        <li>Keine Vorqualifizierung von Interessenten</li>
-        <li>Fehlendes Nachfass-System</li>
+        <li>Unstrukturierte Exposé-Anfragen ohne Vorqualifizierung</li>
+        <li>Manuelle Terminabstimmung mit hohem Zeitaufwand</li>
+        <li>Fehlende Priorisierung kaufstarker Interessenten</li>
+        <li>Kein systematisches Nachfass-Management</li>
     </ul>
 </section>
 
 <section>
-    <div class="before-after">
-        <div class="card before">
-            <h3>Vorher</h3>
-            <p>Unübersichtliches Postfach. Keine Priorisierung. Manuelle Antworten. Verpasste Chancen.</p>
-        </div>
-        <div class="card after">
-            <h3>Nachher</h3>
-            <p>Automatisierte Vorqualifizierung. Strukturierte Terminvergabe. Klare Lead-Priorisierung. Höhere Abschlussquote.</p>
-        </div>
+    <h2>Der strukturierte Prozess</h2>
+    <div class="process-flow">
+        Anfrage → Automatische Vorqualifizierung → Strukturierte Antwort → Terminlogik → Lead-Priorisierung → Abschluss
     </div>
 </section>
 
-<section class="process">
-    <h2>Unser strategischer Ansatz</h2>
-    <div class="process-steps">
-        <div class="step">
-            <h3>Analyse</h3>
-            <p>Wir analysieren Ihren bestehenden Anfrage- und Leadprozess.</p>
-        </div>
-        <div class="step">
-            <h3>Struktur</h3>
-            <p>Wir entwickeln eine klare digitale Prozessarchitektur.</p>
-        </div>
-        <div class="step">
-            <h3>Automatisierung</h3>
-            <p>Implementierung effizienter Abläufe mit messbarer Wirkung.</p>
-        </div>
-        <div class="step">
-            <h3>Monitoring</h3>
-            <p>Laufende Optimierung für maximale Abschlussquote.</p>
-        </div>
-    </div>
+<section class="case">
+    <h2>Beispiel aus der Praxis</h2>
+    <p>Ein regionaler Maklerbetrieb mit über 60 monatlichen Anfragen optimierte seinen Anfrageprozess durch strukturierte Vorqualifizierung und automatisierte Antwortlogik. Ergebnis: 28% höhere Terminquote und signifikante Entlastung im Backoffice.</p>
 </section>
 
 <section class="cta">
     <h2>Struktur schafft Abschlüsse.</h2>
-    <p>Vereinbaren Sie jetzt Ihre strategische Prozessanalyse.</p>
+    <p>Vereinbaren Sie jetzt Ihre strategische Analyse und entdecken Sie Ihr ungenutztes Potenzial.</p>
     <a href="mailto:service@mkmovetica.de" class="btn">Analyse starten</a>
 </section>
 
 <footer>
-© 2026 MK Movetica Solutions – Digitale Prozessautomatisierung
+© 2026 MK Movetica Solutions – Digitale Prozessautomatisierung für Immobilienunternehmen
 </footer>
 
 </body>
