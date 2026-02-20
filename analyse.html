@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Strategische Prozessanalyse – MK Movetica</title>
+<title>Automatisierungspotenzial-Analyse – MK Movetica</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
@@ -28,9 +28,9 @@ margin:0 auto;
 }
 
 h1 {
-font-size:36px;
+font-size:38px;
 margin-bottom:20px;
-font-weight:700;
+font-weight:800;
 }
 
 p {
@@ -73,12 +73,13 @@ font-size:15px;
 button {
 margin-top:40px;
 width:100%;
-padding:15px;
+padding:16px;
 background:#f4a621;
 border:none;
 border-radius:6px;
 font-weight:700;
 cursor:pointer;
+transition:0.3s;
 }
 
 button:hover {
@@ -100,37 +101,40 @@ margin-top:80px;
 <section>
 <div class="container">
 
-<h1>Strategische Prozessanalyse</h1>
+<h1>Automatisierungspotenzial-Analyse</h1>
 
-<p>Diese Analyse ist ausschließlich für Immobilienunternehmen mit relevanter Anfragefrequenz geeignet.</p>
+<p>Diese Analyse richtet sich an Immobilienunternehmen mit relevanter Anfragefrequenz und dem Anspruch, strukturierter zu arbeiten.</p>
 
 <div class="notice">
 Unternehmen mit weniger als 30 Anfragen pro Monat profitieren meist noch nicht von einer strukturellen Automatisierung.
 </div>
 
-<form action="mailto:service@mkmovetica.de" method="post" enctype="text/plain">
+<form action="https://formspree.io/f/mnjbbbnk" method="POST">
 
-<div class="step-title">1. Anfragevolumen</div>
-<select name="Anfragen" required>
+<input type="hidden" name="_subject" value="Neue Automatisierungspotenzial-Analyse">
+<input type="hidden" name="_captcha" value="false">
+
+<div class="step-title">1. Monatliches Anfragevolumen</div>
+<select name="Anfragevolumen" required>
 <option value="">Bitte auswählen</option>
 <option>30–60 Anfragen / Monat</option>
 <option>60–100 Anfragen / Monat</option>
 <option>100+ Anfragen / Monat</option>
 </select>
 
-<div class="step-title">2. Aktuelle Terminquote</div>
+<div class="step-title">2. Aktuelle Terminquote pro Objekt</div>
 <input type="text" name="Terminquote" placeholder="z.B. 5 Termine pro Objekt" required>
 
-<div class="step-title">3. Verwaltungsaufwand</div>
-<input type="text" name="Verwaltungszeit" placeholder="z.B. 6–8 Stunden pro Objekt" required>
+<div class="step-title">3. Verwaltungsaufwand pro Objekt</div>
+<input type="text" name="Verwaltungszeit" placeholder="z.B. 6–8 Stunden" required>
 
-<div class="step-title">4. CRM / Systemlandschaft</div>
+<div class="step-title">4. Aktuelles CRM / System</div>
 <input type="text" name="CRM" placeholder="z.B. Propstack, Flowfact, kein CRM" required>
 
-<div class="step-title">5. Zielsetzung</div>
-<textarea name="Ziel" rows="3" placeholder="Was soll sich konkret verbessern?" required></textarea>
+<div class="step-title">5. Konkretes Ziel</div>
+<textarea name="Ziel" rows="3" placeholder="Was soll sich messbar verbessern?" required></textarea>
 
-<div class="step-title">6. Kontaktdaten</div>
+<div class="step-title">6. Geschäftliche E-Mail-Adresse</div>
 <input type="email" name="Email" placeholder="Ihre geschäftliche E-Mail" required>
 
 <button type="submit">Automatisierungspotenzial bewerten</button>
