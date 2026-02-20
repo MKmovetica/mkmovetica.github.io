@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strategische Prozessanalyse – MK Movetica</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -23,20 +23,29 @@ text-align:center;
 }
 
 .container {
-max-width:800px;
+max-width:750px;
 margin:0 auto;
 }
 
 h1 {
-font-size:38px;
+font-size:36px;
 margin-bottom:20px;
 font-weight:700;
 }
 
 p {
-font-size:18px;
+font-size:17px;
 opacity:0.9;
 margin-bottom:40px;
+}
+
+.notice {
+background:#0c2430;
+padding:20px;
+border-radius:8px;
+margin-bottom:50px;
+font-size:15px;
+opacity:0.85;
 }
 
 form {
@@ -46,10 +55,10 @@ border-radius:12px;
 text-align:left;
 }
 
-label {
-display:block;
-margin-top:25px;
-font-weight:600;
+.step-title {
+font-weight:700;
+margin-top:30px;
+margin-bottom:10px;
 }
 
 input, select, textarea {
@@ -58,13 +67,13 @@ margin-top:8px;
 padding:12px;
 border-radius:6px;
 border:none;
-font-size:16px;
+font-size:15px;
 }
 
 button {
 margin-top:40px;
 width:100%;
-padding:14px;
+padding:15px;
 background:#f4a621;
 border:none;
 border-radius:6px;
@@ -81,6 +90,7 @@ background:#081a22;
 padding:40px;
 text-align:center;
 font-size:14px;
+margin-top:80px;
 }
 </style>
 </head>
@@ -92,34 +102,38 @@ font-size:14px;
 
 <h1>Strategische Prozessanalyse</h1>
 
-<p>Beantworten Sie die folgenden Fragen, damit wir Ihr Automatisierungspotenzial realistisch bewerten können.</p>
+<p>Diese Analyse ist ausschließlich für Immobilienunternehmen mit relevanter Anfragefrequenz geeignet.</p>
+
+<div class="notice">
+Unternehmen mit weniger als 30 Anfragen pro Monat profitieren meist noch nicht von einer strukturellen Automatisierung.
+</div>
 
 <form action="mailto:service@mkmovetica.de" method="post" enctype="text/plain">
 
-<label>Wie viele Exposé-Anfragen erhalten Sie monatlich?</label>
-<select name="Anfragen">
-<option>Unter 30</option>
-<option>30–60</option>
-<option>60–100</option>
-<option>100+</option>
+<div class="step-title">1. Anfragevolumen</div>
+<select name="Anfragen" required>
+<option value="">Bitte auswählen</option>
+<option>30–60 Anfragen / Monat</option>
+<option>60–100 Anfragen / Monat</option>
+<option>100+ Anfragen / Monat</option>
 </select>
 
-<label>Wie viele Objekte vermarkten Sie parallel?</label>
-<input type="text" name="Objekte">
+<div class="step-title">2. Aktuelle Terminquote</div>
+<input type="text" name="Terminquote" placeholder="z.B. 5 Termine pro Objekt" required>
 
-<label>Wie viele qualifizierte Termine entstehen aktuell pro Objekt?</label>
-<input type="text" name="Termine">
+<div class="step-title">3. Verwaltungsaufwand</div>
+<input type="text" name="Verwaltungszeit" placeholder="z.B. 6–8 Stunden pro Objekt" required>
 
-<label>Welches CRM-System nutzen Sie?</label>
-<input type="text" name="CRM">
+<div class="step-title">4. CRM / Systemlandschaft</div>
+<input type="text" name="CRM" placeholder="z.B. Propstack, Flowfact, kein CRM" required>
 
-<label>Wo sehen Sie aktuell das größte Problem?</label>
-<textarea name="Problem" rows="4"></textarea>
+<div class="step-title">5. Zielsetzung</div>
+<textarea name="Ziel" rows="3" placeholder="Was soll sich konkret verbessern?" required></textarea>
 
-<label>Ihre E-Mail-Adresse</label>
-<input type="email" name="Email" required>
+<div class="step-title">6. Kontaktdaten</div>
+<input type="email" name="Email" placeholder="Ihre geschäftliche E-Mail" required>
 
-<button type="submit">Analyse anfordern</button>
+<button type="submit">Automatisierungspotenzial bewerten</button>
 
 </form>
 
